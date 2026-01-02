@@ -25,6 +25,10 @@
       <a href="#">Insurance</a>
       <a href="contact.html">Contact</a>
     </nav>
+     <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
     <button class="header-btn">Book Now</button>
   </div>
 </header>
@@ -415,6 +419,12 @@ function toggleService(card) {
   card.classList.toggle("active");
 }
 </script>
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
+
