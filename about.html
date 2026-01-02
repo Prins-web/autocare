@@ -24,6 +24,10 @@
       <a href="faq.html">FAQs</a>
       <a href="#">Insurance</a>
     </nav>
+     <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
     <button class="header-btn">Book Now</button>
   </div>
 </header>
@@ -211,6 +215,13 @@
     © 2025 AutoCare. All Rights Reserved.
   </div>
 </footer>
+  <script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 
 </body>
 </html>
+
