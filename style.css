@@ -1195,3 +1195,35 @@ html {
   color: #0f172a;
   margin: 0;
 }
+/* HERO MOBILE FIX */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 80vh;          /* prevent too tall hero */
+    padding: 60px 6% 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;           /* smaller heading */
+    line-height: 1.2;          /* tighter lines */
+    margin-bottom: 14px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .hero-points li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+}
+
