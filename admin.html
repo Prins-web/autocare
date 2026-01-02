@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoCare Admin | Bookings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-inner">
+    <span class="logo-text">AutoCare Admin</span>
+  </div>
+</header>
+
+<section style="padding:120px 8% 60px;">
+  <h2>Booking Requests</h2>
+
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>City</th>
+        <th>Vehicle</th>
+        <th>Service</th>
+        <th>Time</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="bookingTable">
+      <!-- data from JS -->
+    </tbody>
+  </table>
+
+  <button class="clear-btn" onclick="clearAll()">Clear All Bookings</button>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+<script src="script.js"></script>
+<script>
+  loadBookings();
+</script>
+
+</body>
+</html>
